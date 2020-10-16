@@ -1,11 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
 header {
-  background: $headerBG;
+  background: darkred;
   color: $fontColor;
-  ul {
-    li {
-      display: inline-block;
-      padding: 20px;
-      margin: 20px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-around;
+  .logo {
+    display: flex;
+    justify-content: center;
+    width: 19%;
+    padding: 5px 60px;
+    a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+    }
+  }
+  .nav-items {
+    display: inline-block;
+    width: 59%;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        display: inline-block;
+        padding: 5px 30px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+  .search {
+    width: 19%;
+    display: inline-block;
+    ul {
+      display: flex;
+      // justify-content: flex-end;
+      li {
+        display: inline-block;
+        padding: 3px 10px 0px 0px;
+        i {
+          padding-top: 3px;
+        }
+      }
+      .search-bar {
+        input {
+          border-radius: 15px;
+          height: 25px;
+          padding: 0px 10px;
+        }
+      }
     }
   }
 }
