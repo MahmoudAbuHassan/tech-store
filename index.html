@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Headphones</title>
   </head>
   <link rel="stylesheet" href="assets/sass/main.css" />
   <link
@@ -12,37 +12,94 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous"
   />
-  <body>
-    <header>
-      <div class="logo">
-        <a href="#"> Ottawa Guy </a>
+  <body class="container">
+    <div class="content-area">
+      <header class="box-1">
+        <div class="menu" id="myMenu">
+          <a class="logo active" href="#"><img
+              src="https://www.freelogoservices.com/blog/wp-content/uploads/transparent-logo.jpg"
+              alt=""
+            /></a>  
+          <a class="nav" href="#">Macbooks</a>
+          <a class="nav" href="#">Laptops</a>
+          <a class="nav" href="#">iPhones</a>
+          <a class="nav" href="#">Accessories</a>
+          <div class="search">
+              <input type="email" name="email" placeholder="Find your item..." />
+              <button type="submit" ="name="button"><i class="fa fa-search"></i></button>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </header>
+      <div class="box-2">
+        <div class="large-number">
+          <img src="assets/img/bg1.jpg" alt="">
+        </div>
+        <div class="info-container">
+          <h1>Laptops on your lap</h1>   
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+            suscipit eveniet quod. Ut repellendus repudiandae quaerat obcaecati?
+          </p>
+          <form class="email-area box-shadow-default">
+            <button type="submit" ="name="button">Start Shopping</button>
+          </form>
+        </div>
       </div>
-      <div class="nav-items">
-        <ul>
-          <li>
-            <a href="#"> Macbooks </a>
-          </li>
-          <li>
-            <a href="#"> iPhones </a>
-          </li>
-          <li>
-            <a href="#"> Laptops </a>
-          </li>
-        </ul>
+      <div class="box-3">
+        <img src="assets/img/mac-items.png" alt="">
       </div>
-      <div class="search">
-        <ul>
-          <li><i class="fa fa-search"></i></li>
-          <li class="search-bar">
-            <input type="text" name="search" />
-          </li>
-          <li><i class="fa fa-times"></i></li>
-        </ul>
+      <div class="box-4 box-shadow">
+        <div class="text">
+          <h5>
+          Design By:          
+          </h5>
+          <h3> 
+          Headphone
+          </h3>
+          <ul>
+            <li>
+              <span><i class="fa fa-check-circle"></i></span> 4 hours of playtime on one charge
+            </li>
+            <li>
+              <span><i class="fa fa-check-circle"></i></span> Intuitive touch interface, with microphone
+            </li>
+            <li>
+              <span><i class="fa fa-check-circle"></i></span> High quality sound
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
-    <div class="content-area">Content area</div>
-
-    <footer>Footer</footer>
+      <div class="box-5 box-shadow">
+        <div class="refresh-icon box-shadow-circle">
+          <i class="fa fa-refresh"></i>
+        </div>
+        <div class="icon-box border-bottom border-right">
+          <i class="fa fa-thumbs-up"></i>
+          Warranty Included
+        </div>
+        <div class="icon-box border-bottom">
+          <i class="fa fa-thumbs-up"></i>
+          Warranty Included
+        </div>
+        <div class="icon-box border-right">
+          <i class="fa fa-thumbs-up"></i>
+          Warranty Included
+        </div>
+        <div class="icon-box">
+          <i class="fa fa-thumbs-up"></i>
+          Warranty Included
+        </div>
+      </div>
+      <!-- <div class="box-6">
+        Box 6
+      </div>
+      <div class="box-7">
+        Box 7
+      </div> -->
+    </div>
   </body>
+<script src="assets/js/script.js"></script>
 </html>
-j

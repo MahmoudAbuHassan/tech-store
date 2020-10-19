@@ -1,58 +1,68 @@
-* {
-  box-sizing: border-box;
+.box-1 {
+  grid-column: 1/13;
+  grid-row: 1/2;
+  height: 50px;
 }
-
-header {
-  background: darkred;
-  color: $fontColor;
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-around;
-  .logo {
+.box-1 {
+  background: white;
+  grid-column: 1/13;
+  padding: 25px 60px;
+  #myMenu {
     display: flex;
-    justify-content: center;
-    width: 19%;
-    padding: 5px 60px;
-    a {
+    justify-content: space-evenly;
+    .logo {
+      display: inline-flex;
+      margin-right: 28px;
+      img {
+        width: 60px;
+      }
+    }
+    .nav {
+      position: relative;
+      top: 20px;
+      color: rgb(38, 73, 247);
       text-decoration: none;
-      color: white;
       text-transform: uppercase;
+      padding: 0 35px;
+      font-weight: 600;
     }
-  }
-  .nav-items {
-    display: inline-block;
-    width: 59%;
-    ul {
-      display: flex;
-      justify-content: space-around;
-      li {
-        display: inline-block;
-        padding: 5px 30px;
-        a {
-          text-decoration: none;
-          color: white;
-        }
+    .search {
+      display: inline-flex;
+      justify-content: center;
+      border-radius: 35px;
+      background: rgb(38, 73, 247);
+      -webkit-box-shadow: 0px 17px 40px -10px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0px 17px 40px -10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 17px 40px -10px rgba(0, 0, 0, 0.3);
+      i {
+        font-size: 1.5rem;
+        opacity: 0.6;
+        position: relative;
+        // left: 5px;
       }
-    }
-  }
-  .search {
-    width: 19%;
-    display: inline-block;
-    ul {
-      display: flex;
-      // justify-content: flex-end;
-      li {
-        display: inline-block;
-        padding: 3px 10px 0px 0px;
+      input {
+        border: none;
+        background: transparent;
+        padding: 0 0 0 4%;
+        width: 150%;
+        position: relative;
+        left: 2%;
+        color: white;
+      }
+      input::placeholder {
+        color: white;
+      }
+      button {
+        border-radius: 35px;
+        padding: 0 4%;
+        background: transparent;
+        font-size: 1rem;
+        text-transform: uppercase;
+        border: none;
+        position: relative;
+        left: -8%;
         i {
-          padding-top: 3px;
-        }
-      }
-      .search-bar {
-        input {
-          border-radius: 15px;
-          height: 25px;
-          padding: 0px 10px;
+          color: white;
         }
       }
     }

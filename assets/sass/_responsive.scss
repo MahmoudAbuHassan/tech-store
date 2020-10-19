@@ -1,0 +1,157 @@
+.box-1 {
+  .menu {
+    // overflow: hidden;
+    .icon {
+      display: none;
+    }
+  }
+}
+
+// Laptops
+@media only screen and (max-width: 1215px) {
+}
+
+// Tablets
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (max-width: 1011px) {
+  .box-1 {
+    // width: 100%;
+    grid-column: 1/13;
+    height: auto;
+    .menu {
+      justify-content: space-between !important;
+      .logo {
+        width: 12%;
+        padding: 0 0 0 4%;
+      }
+      a:not(:first-child) {
+        display: none;
+      }
+      .search {
+        padding: 1% 0;
+      }
+      a.icon {
+        display: block;
+        align-self: center;
+      }
+    }
+    #myMenu {
+      .nav {
+        top: 0;
+        padding: 2% 0;
+      }
+      .search {
+        align-self: center;
+        margin: 0% 5%;
+        button {
+          padding: 3% 0;
+        }
+      }
+      .icon {
+        .fa-bars {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .menu.responsive {
+      position: relative;
+      flex-direction: column;
+      .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      a {
+        float: none;
+        display: flex;
+        justify-content: center;
+      }
+      .search {
+        order: 0;
+        width: 50%;
+        input {
+          padding: inherit;
+          width: inherit;
+          left: 0;
+          bottom: 0;
+          display: inline-block;
+          padding: 3% 0;
+        }
+        button {
+          padding: 0 0;
+        }
+      }
+    }
+  }
+  .box-2 {
+    grid-column: 2/12;
+    grid-row: 3/4;
+    max-height: 620px;
+    .large-number {
+      // right: -56px;
+    }
+    .info-container {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+  .box-3 {
+    grid-column: 2/12;
+    grid-row: 2/3;
+    img {
+      width: 100%;
+    }
+  }
+  .box-4 {
+    grid-column: 2/12;
+    grid-row: 4/5;
+    border-radius: 7px 7px 0 0;
+  }
+  .box-5 {
+    grid-column: 2/12;
+    grid-row: 5/6;
+    border-radius: 0 0 7px 7px;
+    .icon-box {
+      font-size: 1.5rem;
+      padding: 9% 5%;
+    }
+    i {
+      font-size: 2rem;
+      padding: 5% 0;
+    }
+    .refresh-icon {
+      top: 45.5%;
+      left: 44%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    // max-width: 480px;
+    margin: 0 auto;
+  }
+  .box-2 {
+    .large-number {
+      // right: -13px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    // max-width: 480px;
+    margin: 0 auto;
+  }
+  .box-2 {
+    .large-number {
+      // right: 8px;
+    }
+  }
+}
