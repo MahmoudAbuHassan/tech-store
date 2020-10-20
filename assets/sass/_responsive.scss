@@ -120,15 +120,33 @@
     .icon-box {
       font-size: 1.5rem;
       padding: 9% 5%;
+      border-top: 1px solid rgb(233, 239, 245) !important;
     }
     i {
       font-size: 2rem;
       padding: 5% 0;
     }
     .refresh-icon {
-      top: 45.5%;
-      left: 44%;
+      top: 47%;
+      left: 47.3%;
     }
+  }
+  .box-6 {
+    grid-column: 2/12;
+    grid-row: 6/7;
+  }
+  .box-7 {
+    grid-column: 2/12;
+    grid-row: 7/8;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .box-7 {
+    justify-content: center;
+  }
+  .category {
+    margin-top: 20%;
   }
 }
 
@@ -152,6 +170,12 @@
   .box-2 {
     .large-number {
       // right: 8px;
+    }
+  }
+  .box-5 {
+    .refresh-icon {
+      top: 47%;
+      left: 45.3%;
     }
   }
 }

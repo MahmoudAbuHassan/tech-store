@@ -1,7 +1,7 @@
 .box-1 {
   grid-column: 1/13;
   grid-row: 1/2;
-  height: 50px;
+  height: 30px;
 }
 .box-1 {
   background: white;
@@ -9,10 +9,9 @@
   padding: 25px 60px;
   #myMenu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     .logo {
       display: inline-flex;
-      margin-right: 28px;
       img {
         width: 60px;
       }
